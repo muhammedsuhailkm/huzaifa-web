@@ -80,13 +80,18 @@ export default function Example() {
 
           {/* Detailed Office Location */}
           <div className="flex items-center ml-2 sm:ml-6">
-            <div className="flex items-start gap-1 sm:gap-2 text-gray-700 text-[6px] sm:text-[10px] leading-tight sm:leading-snug font-bold tracking-wider uppercase" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+            <div
+              className="flex items-start gap-1 sm:gap-2 text-gray-700 text-[6px] sm:text-[10px] leading-tight sm:leading-snug font-bold tracking-wider uppercase"
+              style={{ fontFamily: "Montserrat, sans-serif" }}
+            >
               <div className="bg-[#D4AF37] p-0.5 sm:p-1 rounded mt-0 sm:mt-0.5">
                 <MapPinIcon className="size-2 sm:size-3 text-black flex-shrink-0" />
               </div>
               <span>
-                Lulu Express - B-ring Road<br />
-                Bldg No: 113, Office 411<br />
+                Lulu Express - B-ring Road
+                <br />
+                Bldg No: 113, Office 411
+                <br />
                 Doha, Qatar
               </span>
             </div>
@@ -107,7 +112,7 @@ export default function Example() {
           style={{ fontFamily: "Montserrat, sans-serif" }}
         >
           <a
-            href="/products"
+            href="/Trading"
             className="flex items-center gap-x-1.5 text-xs xl:text-sm font-semibold text-gray-900 hover:text-[#D4AF37] transition-colors"
           >
             <BriefcaseIcon
@@ -117,7 +122,7 @@ export default function Example() {
             Trading
           </a>
           <a
-            href="#"
+            href="/Construction"
             className="flex items-center gap-x-1.5 text-xs xl:text-sm font-semibold text-gray-900 hover:text-[#D4AF37] transition-colors"
           >
             <BuildingOfficeIcon
@@ -127,7 +132,7 @@ export default function Example() {
             Construction
           </a>
           <a
-            href="#"
+            href="/Facility-management"
             className="flex items-center gap-x-1.5 text-xs xl:text-sm font-semibold text-gray-900 hover:text-[#D4AF37] transition-colors"
           >
             <SparklesIcon
@@ -140,7 +145,10 @@ export default function Example() {
             href="/Contact-us"
             className="flex items-center gap-x-1.5 text-xs xl:text-sm font-semibold text-gray-900 hover:text-[#D4AF37] transition-colors"
           >
-            <PhoneIcon className="size-4 xl:size-5 text-[#D4AF37]" aria-hidden="true" />
+            <PhoneIcon
+              className="size-4 xl:size-5 text-[#D4AF37]"
+              aria-hidden="true"
+            />
             Contact Us
           </a>
         </div>
@@ -169,7 +177,7 @@ export default function Example() {
                 style={{ fontFamily: "Montserrat, sans-serif" }}
               >
                 <a
-                  href="/products"
+                  href="/Trading"
                   className="-mx-3 flex items-center gap-x-3 rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >
                   <BriefcaseIcon
@@ -179,7 +187,7 @@ export default function Example() {
                   Trading
                 </a>
                 <a
-                  href="#"
+                  href="/Construction"
                   className="-mx-3 flex items-center gap-x-3 rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >
                   <BuildingOfficeIcon
@@ -189,14 +197,14 @@ export default function Example() {
                   Construction
                 </a>
                 <a
-                  href="#"
+                  href="/Facility-management"
                   className="-mx-3 flex items-center gap-x-3 rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >
                   <SparklesIcon
                     className="size-6 text-[#D4AF37]"
                     aria-hidden="true"
                   />
-                  Cleaning and Facility Management
+                  Cleaning & Facility
                 </a>
                 <a
                   href="/Contact-us"
