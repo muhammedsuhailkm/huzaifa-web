@@ -2,6 +2,7 @@ import { CheckIcon } from "@heroicons/react/24/outline";
 import { MissionVisionScroll } from "../components/MissionVisionScroll";
 import { StatsSection } from "../components/StatsSection";
 import { WhyChooseUs } from "../components/WhyChooseUs";
+import { ClientsApproach } from "../components/ClientsApproach";
 import { CTASection } from "../components/CTASection";
 
 export default function Home() {
@@ -95,6 +96,9 @@ export default function Home() {
 
       {/* Why Choose Us Section */}
       <WhyChooseUs />
+
+      {/* Clients & Business Approach */}
+      <ClientsApproach />
 
       {/* CTA Section */}
       <CTASection />
