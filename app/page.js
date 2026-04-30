@@ -1,5 +1,8 @@
 import { CheckIcon } from "@heroicons/react/24/outline";
 import { MissionVisionScroll } from "../components/MissionVisionScroll";
+import { StatsSection } from "../components/StatsSection";
+import { WhyChooseUs } from "../components/WhyChooseUs";
+import { CTASection } from "../components/CTASection";
 
 export default function Home() {
   return (
@@ -86,6 +89,15 @@ export default function Home() {
 
       {/* Mission & Vision Section */}
       <MissionVisionScroll />
+
+      {/* Stats Section */}
+      <StatsSection />
+
+      {/* Why Choose Us Section */}
+      <WhyChooseUs />
+
+      {/* CTA Section */}
+      <CTASection />
     </main>
   );
 }

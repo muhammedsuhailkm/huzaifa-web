@@ -5,8 +5,22 @@ import { StickyScroll } from "./ui/sticky-scroll-reveal";
 const content = [
   {
     title: "Our Mission",
-    description:
-      "Our mission is to deliver professional and efficient services that meet client expectations while maintaining strict quality and safety standards.\n\nWe are committed to:\n• Delivering services aligned with recognized quality standards\n• Executing projects within agreed timelines\n• Operating with integrity and transparency\n• Complying with health, safety, environmental, and regulatory requirements",
+    description: (
+      <div className="flex flex-col gap-4">
+        <p>
+          Our mission is to deliver professional and efficient services that meet client expectations while maintaining strict quality and safety standards.
+        </p>
+        <div>
+          <p className="font-semibold mb-2">We are committed to:</p>
+          <ul className="list-disc pl-5 space-y-1">
+            <li>Delivering services aligned with recognized quality standards</li>
+            <li>Executing projects within agreed timelines</li>
+            <li>Operating with integrity and transparency</li>
+            <li>Complying with health, safety, environmental, and regulatory requirements</li>
+          </ul>
+        </div>
+      </div>
+    ),
     content: (
       <div className="flex h-full w-full items-center justify-center text-white">
         <img
@@ -19,8 +33,24 @@ const content = [
   },
   {
     title: "Our Vision",
-    description:
-      "To become a trusted and recognized service provider in Qatar's construction, trading, and facility services.\n\nHUZAIFA BROTHERS aims to build a strong reputation through consistent quality delivery, ethical business practices, and compliance with industry standards. The company is committed to supporting Qatar's infrastructure development and service.\n\nOur Vision Reflects:\n• Trust and reliability\n• Long-term sustainability\n• Professional excellence",
+    description: (
+      <div className="flex flex-col gap-4">
+        <p>
+          To become a trusted and recognized service provider in Qatar's construction, trading, and facility services.
+        </p>
+        <p>
+          HUZAIFA BROTHERS aims to build a strong reputation through consistent quality delivery, ethical business practices, and compliance with industry standards. The company is committed to supporting Qatar's infrastructure development and service.
+        </p>
+        <div>
+          <p className="font-semibold mb-2">Our Vision Reflects:</p>
+          <ul className="list-disc pl-5 space-y-1">
+            <li>Trust and reliability</li>
+            <li>Long-term sustainability</li>
+            <li>Professional excellence</li>
+          </ul>
+        </div>
+      </div>
+    ),
     content: (
       <div className="flex h-full w-full items-center justify-center text-white">
         <img

@@ -14,7 +14,7 @@ export default function Example() {
         className="mx-auto flex max-w-7xl items-center justify-between py-4 px-6 lg:px-8"
       >
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5 flex items-center">
+          <a href="/" className="-m-1.5 p-1.5 flex items-center">
             <span className="sr-only">Your Company</span>
             <img
               alt="Huzaifa Logo"
@@ -78,7 +78,7 @@ export default function Example() {
             <SparklesIcon className="size-5 text-[#D4AF37]" aria-hidden="true" />
             Cleaning and Facility Management
           </a>
-          <a href="#" className="flex items-center gap-x-2 text-sm/6 font-semibold text-gray-900 hover:text-[#D4AF37] transition-colors">
+          <a href="/Contact-us" className="flex items-center gap-x-2 text-sm/6 font-semibold text-gray-900 hover:text-[#D4AF37] transition-colors">
             <PhoneIcon className="size-5 text-[#D4AF37]" aria-hidden="true" />
             Contact Us
           </a>
@@ -126,7 +126,7 @@ export default function Example() {
                   Cleaning and Facility Management
                 </a>
                 <a
-                  href="#"
+                  href="/Contact-us"
                   className="-mx-3 flex items-center gap-x-3 rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >
                   <PhoneIcon className="size-6 text-[#D4AF37]" aria-hidden="true" />
