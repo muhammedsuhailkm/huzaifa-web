@@ -89,7 +89,7 @@ export function Footer() {
                 <MapPinIcon className="w-5 h-5 text-[#005a8c] flex-shrink-0 mt-0.5" />
                 <span>
                   Doha Al Jadeed, Building No:71,<br />
-                  5th floor, Office 09,<br />
+                  5th floor, Office No:09,<br />
                   DOHA, QATAR
                 </span>
               </li>

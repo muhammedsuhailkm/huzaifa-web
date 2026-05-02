@@ -90,7 +90,7 @@ export default function Example() {
               <span>
                 Doha Al Jadeed, Building No:71,
                 <br />
-                5th floor, Office 09
+                5th floor, Office No:09
                 <br />
                 DOHA, QATAR
               </span>
