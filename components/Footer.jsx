@@ -88,9 +88,9 @@ export function Footer() {
               <li className="flex items-start gap-2 text-gray-700 font-medium text-sm leading-relaxed">
                 <MapPinIcon className="w-5 h-5 text-[#005a8c] flex-shrink-0 mt-0.5" />
                 <span>
-                  Lulu Express - B-ring Road,<br />
-                  Building No: 113, Office No: 411,<br />
-                  Doha-Qatar
+                  Doha Al Jadeed, Building No:71,<br />
+                  5th floor, Office 09,<br />
+                  DOHA, QATAR
                 </span>
               </li>
             </ul>

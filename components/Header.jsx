@@ -88,11 +88,11 @@ export default function Example() {
                 <MapPinIcon className="size-2 sm:size-3 text-black flex-shrink-0" />
               </div>
               <span>
-                Lulu Express - B-ring Road
+                Doha Al Jadeed, Building No:71,
                 <br />
-                Bldg No: 113, Office 411
+                5th floor, Office 09
                 <br />
-                Doha, Qatar
+                DOHA, QATAR
               </span>
             </div>
           </div>

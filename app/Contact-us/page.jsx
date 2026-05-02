@@ -54,9 +54,9 @@ export default function ContactUs() {
                 <div>
                   <h4 className="text-base font-medium text-white mb-1" style={{ fontFamily: 'Playfair Display, serif' }}>Our Address</h4>
                   <p className="text-gray-300 text-sm leading-relaxed font-light">
-                    Lulu Express - B-ring Road,<br />
-                    Building No: 113, Office No: 411,<br />
-                    Doha-Qatar
+                    Doha Al Jadeed, Building No:71,<br />
+                    5th floor, Office 09,<br />
+                    DOHA, QATAR
                   </p>
                 </div>
               </div>
