@@ -31,7 +31,8 @@ export default function Example() {
               src="/logo-org.png"
               width={120}
               height={96}
-              className="h-14 sm:h-24 w-auto -my-2 sm:-my-4"
+              className="h-14 sm:h-24 -my-2 sm:-my-4"
+              style={{ width: 'auto', height: 'auto' }}
               loading="eager"
               quality={75}
             />

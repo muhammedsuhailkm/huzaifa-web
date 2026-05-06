@@ -41,7 +41,8 @@ export function Footer() {
                 alt="Huzaifa Brothers Logo" 
                 width={96}
                 height={64}
-                className="h-16 w-auto object-contain drop-shadow-md" 
+                className="h-16 object-contain drop-shadow-md" 
+                style={{ width: 'auto', height: 'auto' }}
                 loading="lazy"
               />
             </div>
