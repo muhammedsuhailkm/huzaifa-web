@@ -1,15 +1,20 @@
 import React from "react";
+import Image from "next/image";
 import Link from "next/link";
 
 export function CTASection() {
   return (
     <section className="relative w-full py-6 md:py-8 lg:py-10 overflow-hidden flex items-center justify-center">
-      {/* Background Image with Overlay */}
+      {/* Background Image with Overlay — using next/image for optimization */}
       <div className="absolute inset-0 z-0">
-        <img
+        <Image
           src="/2.jpeg"
-          alt="Huzaifa Brothers Services"
-          className="w-full h-full object-cover grayscale opacity-90"
+          alt=""
+          fill
+          className="object-cover grayscale opacity-90"
+          sizes="100vw"
+          loading="lazy"
+          quality={75}
         />
         <div className="absolute inset-0 bg-black/60 mix-blend-multiply"></div>
         <div className="absolute inset-0 bg-gradient-to-b from-gray-900/50 to-gray-900/80"></div>

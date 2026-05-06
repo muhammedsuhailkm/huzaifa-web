@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import {
   Bars3Icon,
@@ -25,10 +26,14 @@ export default function Example() {
         <div className="flex lg:flex-1">
           <a href="/" className="-m-1.5 p-1.5 flex items-center">
             <span className="sr-only">Your Company</span>
-            <img
+            <Image
               alt="Huzaifa Logo"
               src="/logo-org.png"
+              width={120}
+              height={96}
               className="h-14 sm:h-24 w-auto -my-2 sm:-my-4"
+              loading="eager"
+              quality={75}
             />
             <div className="ml-2 sm:ml-4 flex flex-col justify-center">
               <span

@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 import { StickyScroll } from "./ui/sticky-scroll-reveal";
 
 const content = [
@@ -22,11 +23,14 @@ const content = [
       </div>
     ),
     content: (
-      <div className="flex h-full w-full items-center justify-center text-white">
-        <img
+      <div className="relative flex h-full w-full items-center justify-center text-white">
+        <Image
           src="/ourmission.jpg"
-          className="h-full w-full object-cover rounded-2xl"
           alt="Our Mission"
+          fill
+          className="object-cover rounded-2xl"
+          sizes="(max-width: 768px) 100vw, 50vw"
+          loading="lazy"
         />
       </div>
     ),
@@ -52,11 +56,14 @@ const content = [
       </div>
     ),
     content: (
-      <div className="flex h-full w-full items-center justify-center text-white">
-        <img
+      <div className="relative flex h-full w-full items-center justify-center text-white">
+        <Image
           src="/ourvision.jpg"
-          className="h-full w-full object-cover rounded-2xl"
           alt="Our Vision"
+          fill
+          className="object-cover rounded-2xl"
+          sizes="(max-width: 768px) 100vw, 50vw"
+          loading="lazy"
         />
       </div>
     ),

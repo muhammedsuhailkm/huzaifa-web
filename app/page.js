@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { CheckIcon } from "@heroicons/react/24/outline";
 import { MissionVisionScroll } from "../components/MissionVisionScroll";
 import { StatsSection } from "../components/StatsSection";
@@ -9,9 +10,18 @@ export default function Home() {
   return (
     <main>
       <section
-        className="relative flex min-h-[80vh] flex-col justify-start pt-16 md:pt-12 md:justify-end bg-cover bg-center bg-no-repeat px-6 pb-12 lg:px-16 lg:pb-24"
-        style={{ backgroundImage: "url('/hero.png')" }}
+        className="relative flex min-h-[80vh] flex-col justify-start pt-16 md:pt-12 md:justify-end px-6 pb-12 lg:px-16 lg:pb-24"
       >
+        {/* Optimized hero background using next/image instead of CSS background-image */}
+        <Image
+          src="/hero.png"
+          alt=""
+          fill
+          className="object-cover object-center"
+          sizes="100vw"
+          preload
+          quality={75}
+        />
         <div className="relative z-10 w-full max-w-7xl mx-auto text-left">
           <h1
             className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white drop-shadow-[0_4px_4px_rgba(0,0,0,0.8)]"
@@ -73,15 +83,51 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Images Grid */}
+        {/* Images Grid — using next/image with responsive sizes */}
         <div className="grid grid-cols-2 gap-4 sm:gap-6 lg:pl-8">
           <div className="space-y-4 sm:space-y-6 pt-8 sm:pt-12">
-            <img src="/1.jpeg" alt="Company Showcase 1" className="w-full h-48 sm:h-64 lg:h-72 object-cover rounded-2xl shadow-xl hover:scale-105 transition-transform duration-300" />
-            <img src="/3.jpeg" alt="Company Showcase 3" className="w-full h-48 sm:h-64 lg:h-72 object-cover rounded-2xl shadow-xl hover:scale-105 transition-transform duration-300" />
+            <div className="relative w-full h-48 sm:h-64 lg:h-72 rounded-2xl shadow-xl overflow-hidden hover:scale-105 transition-transform duration-300">
+              <Image
+                src="/1.jpeg"
+                alt="Company Showcase 1"
+                fill
+                className="object-cover"
+                sizes="(max-width: 640px) 45vw, (max-width: 1024px) 40vw, 20vw"
+                loading="lazy"
+              />
+            </div>
+            <div className="relative w-full h-48 sm:h-64 lg:h-72 rounded-2xl shadow-xl overflow-hidden hover:scale-105 transition-transform duration-300">
+              <Image
+                src="/3.jpeg"
+                alt="Company Showcase 3"
+                fill
+                className="object-cover"
+                sizes="(max-width: 640px) 45vw, (max-width: 1024px) 40vw, 20vw"
+                loading="lazy"
+              />
+            </div>
           </div>
           <div className="space-y-4 sm:space-y-6">
-            <img src="/2.jpeg" alt="Company Showcase 2" className="w-full h-48 sm:h-64 lg:h-72 object-cover rounded-2xl shadow-xl hover:scale-105 transition-transform duration-300" />
-            <img src="/5.png" alt="Company Showcase 4" className="w-full h-48 sm:h-64 lg:h-72 object-cover rounded-2xl shadow-xl hover:scale-105 transition-transform duration-300" />
+            <div className="relative w-full h-48 sm:h-64 lg:h-72 rounded-2xl shadow-xl overflow-hidden hover:scale-105 transition-transform duration-300">
+              <Image
+                src="/2.jpeg"
+                alt="Company Showcase 2"
+                fill
+                className="object-cover"
+                sizes="(max-width: 640px) 45vw, (max-width: 1024px) 40vw, 20vw"
+                loading="lazy"
+              />
+            </div>
+            <div className="relative w-full h-48 sm:h-64 lg:h-72 rounded-2xl shadow-xl overflow-hidden hover:scale-105 transition-transform duration-300">
+              <Image
+                src="/5.png"
+                alt="Company Showcase 4"
+                fill
+                className="object-cover"
+                sizes="(max-width: 640px) 45vw, (max-width: 1024px) 40vw, 20vw"
+                loading="lazy"
+              />
+            </div>
           </div>
         </div>
       </div>

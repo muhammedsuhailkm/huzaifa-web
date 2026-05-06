@@ -19,7 +19,8 @@ export default function TradingPage() {
           fill
           className="object-cover"
           sizes="100vw"
-          priority
+          preload
+          quality={75}
         />
         {/* Dark overlay */}
         <div className="absolute inset-0 bg-[#0f172a]/75" />
@@ -234,6 +235,8 @@ export default function TradingPage() {
           fill
           className="object-cover"
           sizes="100vw"
+          loading="lazy"
+          quality={75}
         />
         {/* Dark overlay for text contrast */}
         <div className="absolute inset-0 bg-[#0f172a]/85" />

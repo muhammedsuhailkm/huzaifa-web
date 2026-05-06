@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { EnvelopeIcon, PhoneIcon, MapPinIcon } from '@heroicons/react/24/outline';
 
@@ -35,10 +36,13 @@ export function Footer() {
           {/* Column 1: Logo & Description */}
           <div>
             <div className="mb-4">
-              <img 
+              <Image 
                 src="/logo-org.png" 
                 alt="Huzaifa Brothers Logo" 
+                width={96}
+                height={64}
                 className="h-16 w-auto object-contain drop-shadow-md" 
+                loading="lazy"
               />
             </div>
             <p className="text-gray-700 font-medium text-sm leading-relaxed mb-4">

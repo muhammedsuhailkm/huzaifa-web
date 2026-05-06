@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import {
   BriefcaseIcon,
   DocumentCheckIcon,
@@ -16,11 +17,17 @@ const stats = [
 export function StatsSection() {
   return (
     <section className="relative py-8 sm:py-12 overflow-hidden">
-      {/* Background Image with Dark Overlay */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/hero.png')" }}
-      >
+      {/* Background Image with Dark Overlay — optimized with next/image */}
+      <div className="absolute inset-0">
+        <Image
+          src="/hero.png"
+          alt=""
+          fill
+          className="object-cover object-center"
+          sizes="100vw"
+          loading="lazy"
+          quality={75}
+        />
         <div className="absolute inset-0 bg-[#0f172a]/90 mix-blend-multiply"></div>
         <div className="absolute inset-0 bg-gradient-to-r from-[#0f172a] via-[#0f172a]/95 to-[#0f172a]"></div>
       </div>

@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 import { CheckIcon } from "@heroicons/react/24/outline";
 import { motion } from "motion/react";
 
@@ -57,9 +58,9 @@ export function WhyChooseUs() {
 
           {/* Right Image Container */}
           <div className="relative w-full lg:w-[40%] min-h-[350px] lg:min-h-0">
-            {/* Desktop overlapping image */}
+            {/* Desktop overlapping image — animation on wrapper, Image inside */}
             <div className="hidden lg:block absolute top-[-40px] bottom-[40px] right-0 left-0 overflow-hidden shadow-2xl">
-              <motion.img
+              <motion.div
                 initial={{ scale: 1 }}
                 animate={{ scale: 1.08 }}
                 transition={{
@@ -68,18 +69,30 @@ export function WhyChooseUs() {
                   repeatType: "reverse",
                   ease: "linear",
                 }}
-                src="fac.jpg"
-                alt="Why Choose Us - Engineering Team"
-                className="w-full h-full object-cover object-center"
-              />
+                className="w-full h-full relative"
+              >
+                <Image
+                  src="/fac.jpg"
+                  alt="Why Choose Us - Engineering Team"
+                  fill
+                  className="object-cover object-center"
+                  sizes="(max-width: 1024px) 100vw, 40vw"
+                  loading="lazy"
+                  quality={75}
+                />
+              </motion.div>
             </div>
             
             {/* Mobile image fallback */}
             <div className="block lg:hidden relative h-72 sm:h-96 w-full overflow-hidden">
-              <img
-                src="fac.jpg"
+              <Image
+                src="/fac.jpg"
                 alt="Why Choose Us - Engineering Team"
-                className="w-full h-full object-cover object-center"
+                fill
+                className="object-cover object-center"
+                sizes="100vw"
+                loading="lazy"
+                quality={75}
               />
             </div>
           </div>
